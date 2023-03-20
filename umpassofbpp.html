@@ -15,6 +15,18 @@ window.onload = function () {
 }
 </script>
 	
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		const scrParam = urlParams.get('src');
+    if(scrParam){
+		const proximoBtn = document.getElementById('botaoproximo');
+		proximoBtn.href = 'pvfb.html?scr=' + scrParam;
+    } else{
+		const proximoBtn = document.getElementById('botaoproximo');
+		proximoBtn.href = 'pvfb.html';
+    }
+	</script>
+	
 	
 	
 <!-- Google Tag Manager -->
